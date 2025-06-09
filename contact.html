@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunWay Travel - Kontakt</title>
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="SunWay Travel Logo" style="max-height: 80px;">
+            </a>
+            <nav>
+                <button class="menu-toggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="gallery.html">Galéria</a></li>
+                    <li><a href="about.html">O nás</a></li>
+                    <li class="active"><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Kontaktujte nás</h1>
+                <p>Máte otázky? Radi vám odpovieme</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Kontaktné údaje</h2>
+                        <p><i class="fas fa-map-marker-alt"></i> <strong>Adresa:</strong> Hlavná 1, 811 01 Bratislava</p>
+                        <p><i class="fas fa-phone"></i> <strong>Telefón:</strong> +421 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@sunwaytravel.sk</p>
+                        <p><i class="fas fa-clock"></i> <strong>Otvaracie hodiny:</strong> Po-Pia: 9:00-17:00</p>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Napíšte nám</h2>
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Meno a priezvisko *</label>
+                                <input type="text" id="name" name="name" required minlength="5" maxlength="128">
+                                <small class="error-message">Meno musí obsahovať aspoň 5 znakov</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required maxlength="256">
+                                <small class="error-message">Zadajte platnú emailovú adresu</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefón</label>
+                                <input type="tel" id="phone" name="phone" minlength="7">
+                                <small class="error-message">Telefón musí obsahovať aspoň 7 číslic</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Predmet *</label>
+                                <input type="text" id="subject" name="subject" required minlength="3" maxlength="128">
+                                <small class="error-message">Predmet musí obsahovať aspoň 3 znaky</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Správa *</label>
+                                <textarea id="message" name="message" required minlength="5"></textarea>
+                                <small class="error-message">Správa musí obsahovať aspoň 5 znakov</small>
+                            </div>
+                            <button type="submit" class="btn">Odoslať správu</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SunWay Travel</h3>
+                    <p>Cestovná kancelária s dlhoročnou tradíciou a tisíckami spokojných klientov.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontakt</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Hlavná 1, Bratislava</p>
+                    <p><i class="fas fa-phone"></i> +421 123 456 789</p>
+                    <p><i class="fas fa-envelope"></i> info@sunwaytravel.sk</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Sledujte nás</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SunWay Travel. Všetky práva vyhradené.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
